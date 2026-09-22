@@ -15,6 +15,9 @@ int main() {
     bn::fixed speed = 5.5;
 
     while(true) {
+
+        dot.set_x(dot.x() - speed);
+
         if(bn::keypad::left_held()) {
             dot.set_x(dot.x() - speed);
         }
