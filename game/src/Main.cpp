@@ -12,11 +12,11 @@ int main() {
 
     auto dot = bn::sprite_items::dot.create_sprite(0, 0);
 
-    bn::fixed speed = 5.5;
+    bn::fixed speed = 1;
 
     while(true) {
 
-        dot.set_x(dot.x() - speed);
+        dot.set_y(dot.y() + speed);
 
         if(bn::keypad::left_held()) {
             dot.set_x(dot.x() - speed);
